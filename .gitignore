@@ -1,0 +1,35 @@
+###########################
+# File patterns to ignore #
+###########################
+*.log
+*.history
+*.pyc
+
+######################
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+#######################
+# GIT generated files #
+#######################
+.idea
+.pythoscope
+*.iml
+*.ipr
+*.iws
+
+#########################
+# Python specific files #
+#########################
+venv
+cache
+logs
+output
+build
+db
+config/*test*
+data/*

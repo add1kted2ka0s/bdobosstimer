@@ -9,8 +9,8 @@ var current_time = moment();
 var image_path = 'static/images/';
 var next_boss = [];
 var utc_offset = -420; // GMT-0700
+var location_base_url = 'http://www.somethinglovely.net';
 var database_base_url = 'https://bddatabase.net'; // 'https://bdocodex.com'
-var somethinglovely_base_url = 'http://www.somethinglovely.net';
 
 // msToTime -------------------------------------------------------------------
 function msToTime(duration) {
@@ -70,7 +70,7 @@ function addEvents() {
 
 // setCalendar ----------------------------------------------------------------
 function setCalendar() {
-    calendar = $('#full-calendar-instance').fullCalendar({
+    calendar = $('#na-full-calendar-instance').fullCalendar({
         header: {
             // left: 'prev,next today',
             // center: 'title',
@@ -124,39 +124,27 @@ function setCalendar() {
 function checkNextBoss() {
     for (var i = 0; i < raw_events.length; i++) {
         var start = moment().utcOffset(utc_offset).startOf('week').add(raw_events[i]['start']);
-        var color = boss_mapping[raw_events[i]['type']]['color'];
+        // var color = boss_mapping[raw_events[i]['type']]['color'];
         var display_full = boss_mapping[raw_events[i]['type']]['display']['full'];
         var image = image_path + boss_mapping[raw_events[i]['type']]['image'];
-
-//        console.log('----- ----- -----');
-//        console.log(display_short);
-//        console.log('next_boss.length : ' + next_boss.length);
-//        console.log('start    : ' + start.format('YYYY-MM-D hh:mm:ss A'));
-//        if (next_boss.length > 0) {
-//            console.log('old_time : ' + next_boss[0].time.format('YYYY-MM-D hh:mm:ss A'));
-//            if (start.isSame(next_boss[0].time)) {
-//                console.log('MATCHED');
-//            } else {
-//                console.log('NOT MATCHED');
-//            }
-//        }
-//
-
-        // (next_boss.length > 0 && start == next_boss[0].time)
         if ((next_boss.length === 0 && start > current_time) || (next_boss.length > 0 && start.isSame(next_boss[0].time))) {
             next_boss_entry = {
                 name: display_full,
                 time: start,
                 image: image,
+                type: raw_events[i]['type']
             };
             next_boss.push(next_boss_entry);
         }
     }
 
     console.log(next_boss);
-    document.getElementById('next-boss-time').innerHTML = next_boss[0].time.local().format('dddd, MMMM Do YYYY @ hh:mm:ss A');
-    document.getElementById("next-boss-image").src = next_boss[0].image;
-    document.getElementById('next-boss-name').innerHTML = next_boss[0].name;
+    document.getElementById('na-1-next-boss-content-time').innerHTML = next_boss[0].time.local().format('dddd, MMMM Do YYYY @ hh:mm:ss A');
+    document.getElementById("na-1-next-boss-content-image").src = next_boss[0].image;
+    document.getElementById('na-1-next-boss-content-name').innerHTML = next_boss[0].name;
+    document.getElementById('na-1-next-boss-content-meta-location-link').setAttribute("href", location_base_url + boss_mapping[next_boss[0]['type']]['meta']['location']);
+    document.getElementById('na-1-next-boss-content-meta-guide-link').setAttribute("href", boss_mapping[next_boss[0]['type']]['meta']['guide']);
+    document.getElementById('na-1-next-boss-content-meta-database-link').setAttribute("href", database_base_url + boss_mapping[next_boss[0]['type']]['meta']['database']);
 }
 
 // startTime ------------------------------------------------------------------
@@ -173,7 +161,7 @@ function startTime() {
     document.getElementById('current-time').innerHTML = current_time.format('hh:mm:ss A');
 
     var next_boss_eta = msToTime(next_boss[0].time.diff(current_time));
-    document.getElementById('next-boss-eta').innerHTML = next_boss_eta;
+    document.getElementById('na-1-next-boss-content-eta').innerHTML = next_boss_eta;
 
     t = setTimeout(function () {
         startTime()

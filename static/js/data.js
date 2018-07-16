@@ -8,7 +8,7 @@ var boss_mapping = {
         },
         meta: {
             'database': '/us/npc/23060/',
-            'somethinglovely': '/bdo/#worldbosses/karanda',
+            'location': '/bdo/#worldbosses/karanda',
             'guide': 'http://urzasarchives.com/bdo/guides/harpy-queen-karanda/',
         },
         image: 'karanda.png'
@@ -20,8 +20,8 @@ var boss_mapping = {
             full: 'Kzarka, The Lord of Corruption'
         },
         meta: {
-            'database': 'TODO', // TODO
-            'somethinglovely': 'TODO', // TODO
+            'database': '/us/npc/23001/',
+            'location': '/bdo/#worldbosses/kzarka',
             'guide': 'http://urzasarchives.com/bdo/guides/how-to-world-field-boss-black-desert-online/page_4/',
         },
         image: 'kzarka.png'
@@ -30,11 +30,11 @@ var boss_mapping = {
         color: '#21618C',
         display: {
             short: 'Nouver',
-            full: 'Nouver'
+            full: 'Shadow of Nouver'
         },
         meta: {
-            'database': 'TODO', // TODO
-            'somethinglovely': 'TODO', // TODO
+            'database': '/us/npc/23054/',
+            'location': '/bdo/#worldbosses/nouver',
             'guide': 'https://www.invenglobal.com/articles/736/bdo-guide-world-boss-nouver',
         },
         image: 'nouver.png'
@@ -46,8 +46,8 @@ var boss_mapping = {
             full: 'Ancient Kutum'
         },
         meta: {
-            'database': 'TODO', // TODO
-            'somethinglovely': 'TODO', // TODO
+            'database': '/us/npc/23073/',
+            'location': '/bdo/#worldbosses/ancient-kutum',
             'guide': 'http://urzasarchives.com/bdo/guides/ancient-kutum-bossfight-guide/',
         },
         image: 'kutum.png'
@@ -56,11 +56,11 @@ var boss_mapping = {
         color: '#9A7D0A',
         display: {
             short: 'Offin',
-            full: 'Offin'
+            full: 'Watcher Offin Tett'
         },
         meta: {
-            'database': 'TODO', // TODO
-            'somethinglovely': 'TODO', // TODO
+            'database': '/us/npc/23754/',
+            'location': '/bdo/#worldbosses/offin-tett',
             'guide': 'https://www.invenglobal.com/blackdesertonline/articles/1709/in-depth-raid-guide-for-mirumok-watcher-offin-the-awakened-ancient-weapon-in-kamasylvia',
         },
         image: 'offin.png'
@@ -69,11 +69,11 @@ var boss_mapping = {
         color: '#935116',
         display: {
             short: 'Quint',
-            full: 'Quint'
+            full: 'Quint, The First Troll'
         },
         meta: {
-            'database': 'TODO', // TODO
-            'somethinglovely': 'TODO', // TODO
+            'database': '/us/npc/23102/',
+            'location': '/bdo/#worldbosses/quint',
             'guide': 'https://www.invenglobal.com/articles/3472/guide-on-the-new-world-bosses-muraka-and-quint-things-to-get-locations-patterns-and-rewards',
         },
         image: 'quint.png'
@@ -82,11 +82,11 @@ var boss_mapping = {
         color: '#5F6A6A',
         display: {
             short: 'Muraka',
-            full: 'Muraka'
+            full: 'Muraka, King of Ogres'
         },
         meta: {
-            'database': 'TODO', // TODO
-            'somethinglovely': 'TODO', // TODO
+            'database': '/us/npc/23097/',
+            'location': '/bdo/#worldbosses/muraka',
             'guide': 'https://www.invenglobal.com/articles/3472/guide-on-the-new-world-bosses-muraka-and-quint-things-to-get-locations-patterns-and-rewards',
         },
         image: 'muraka.png'
@@ -95,11 +95,11 @@ var boss_mapping = {
         color: '#1C2833',
         display: {
             short: 'Vell',
-            full: 'Vell'
+            full: 'Vell, Heart of the Ocean'
         },
         meta: {
-            'database': 'TODO', // TODO
-            'somethinglovely': 'TODO', // TODO
+            'database': '/us/npc/23080/',
+            'location': '/bdo/#worldbosses/vell',
             'guide': 'https://www.invenglobal.com/blackdesertonline/articles/4063/a-simple-guide-on-vell-the-new-ocean-raid-boss',
         },
         image: 'vell.png'
