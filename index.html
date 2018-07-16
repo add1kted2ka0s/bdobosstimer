@@ -1,1 +1,185 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Semantic UI -->
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/reset.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/site.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/container.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/header.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/image.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/menu.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/label.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/divider.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/list.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/icon.css">
+    <!-- Full Calendar -->
+    <link rel='stylesheet' href='static/fullcalendar/fullcalendar.css'/>
+    <script src='static/fullcalendar/lib/jquery.min.js'></script>
+    <script src='static/fullcalendar/lib/moment.min.js'></script>
+    <script src='static/fullcalendar/fullcalendar.js'></script>
+    <!-- Google Fonts -->
+    <!--<link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+    <!-- Site Properties -->
+    <title>BDO Boss Timer</title>
+    <link rel="stylesheet" type="text/css" href="static/css/bdobosstimer.css">
+</head>
+<!-- Body -->
+<body>
+<!-- Menu -->
+<div class="ui fixed inverted menu">
+    <div class="ui container">
+        <a href="#" class="header item">
+            <img class="logo" src="static/images/black_spirit.36x36.ico">
+            BDO Boss Timer
+        </a>
+        <a href="#NA" class="item">NA</a>
+        <a href="#EU" class="item">EU</a>
+        <div class="item right">
+            <div id="current-time">TBD</div>
+        </div>
+    </div>
+</div>
+
+<!-- Main -->
+<div class="ui main container">
+    <!-- Intro -->
+    <h1 class="ui header">BDO Boss Timer</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!-- NA -->
+    <div style="visibility: hidden">
+        <a name="NA">North America</a><br><br>
+    </div>
+    <h1 class="ui header">North America</h1>
+    <hr>
+    <div class="ui gray label">
+        <i class="clock icon"></i>
+        Upcoming Boss Spawn&nbsp;
+    </div>
+    <div class="next-boss-container">
+        <div class="next-boss-image-container">
+            <img class="next-boss-image" id="next-boss-image" src="" alt="">
+        </div>
+        <div class="next-boss-content-container">
+            <div class="next-boss-content-name-container">
+                <div class="next-boss-content-name" id="next-boss-name">Boss Name</div>
+            </div>
+            <div class="next-boss-content-time-container">
+                <div class="next-boss-content-time-static">Next spawn at&nbsp;</div>
+                <div class="next-boss-content-time" id="next-boss-time">Boss Time</div>
+            </div>
+            <div class="next-boss-content-eta-container">
+                <div class="next-boss-content-eta-static">Next spawn in&nbsp;</div>
+                <div class="next-boss-content-eta" id="next-boss-eta">Boss ETA</div>
+            </div>
+            <div class="next-boss-content-meta-container">
+                <a id="next-boss-content-meta-location-link" class="next-boss-content-meta-link" href="#" target="_new"><i class="location arrow icon"></i>Location</a>
+                &nbsp;&nbsp;
+                <a id="next-boss-content-meta-guide-link" class="next-boss-content-meta-link" href="#" target="_new"><i class="book icon"></i>Guide</a>
+                &nbsp;&nbsp;
+                <a id="next-boss-content-meta-database-link" class="next-boss-content-meta-link" href="#" target="_new"><i class="database icon"></i>Database</a>
+            </div>
+        </div>
+    </div>
+    <!--<span>Next Boss Image: </span><img id="next-boss-image" src="" alt="">-->
+    <!--<br>-->
+    <!--<span>Next Boss Name: </span><span id="next-boss-name">TBD</span>-->
+    <!--<br>-->
+    <!--<span>Next Boss Time: </span><span id="next-boss-time">TBD</span>-->
+    <!--<br>-->
+    <!--<span>Next Boss ETA: </span><span id="next-boss-eta">TBD</span>-->
+    <!--<br>-->
+    <div id="full-calendar-instance"></div>
+    <!-- EU -->
+    <div style="visibility: hidden">
+        <a name="EU">Europe</a><br><br>
+    </div>
+    <h1 class="ui header">Europe</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!-- Support -->
+    <div style="visibility: hidden">
+        <a name="Support">Support</a><br><br>
+    </div>
+    <h1 class="ui header">Support</h1>
+    <hr>
+    <a href="https://www.patreon.com/bePatron?u=12319347" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+    <br>
+    <p>If you like this website and find it useful, considering supporting me on Patreon, and help support future development costs!</p>
+    <!-- Contribute -->
+    <div style="visibility: hidden">
+        <a name="Contribute">Contribute</a><br><br>
+    </div>
+    <h1 class="ui header">Contribute</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!-- Contact -->
+    <div style="visibility: hidden">
+        <a name="Contact">Contact</a><br><br>
+    </div>
+    <h1 class="ui header">Contact</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!-- Changelog -->
+    <div style="visibility: hidden">
+        <a name="Changelog">Changelog</a><br><br>
+    </div>
+    <h1 class="ui header">Changelog</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!-- TODO -->
+    <div style="visibility: hidden">
+        <a name="TODO">TODO</a><br><br>
+    </div>
+    <h1 class="ui header">TODO</h1>
+    <hr>
+    <p>TODO: Check for currently spawned boss - update status accoridngly</p>
+    <p>TODO: Alert on boss spawn 5 mins before</p>
+    <p>TODO: Alert on boss despawn timer</p>
+    <p>TODO: Dynamically update next boss</p>
+    <p>TODO: Get all boss images, background images, straget guides, locations, links to bdocodex, animation, video</p>
+    <p>TODO: Support for multiple bosses</p>
+    <p>TODO: Support for daylight savings</p>
+    <p>TODO: Double check raw_events</p>
+    <p>TODO: Calendar event mouseover tooltip</p>
+    <p>TODO: Update calendar entry to format time on second row (include timezone), and possibly include mini icon</p>
+    <p>TODO: Contact us Google Form</p>
+    <p>TODO: Issue Tracker on GitHub</p>
+</div>
+<!-- Footer -->
+<div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+        <!--<div class="ui stackable inverted divided grid">-->
+        <!--<div class="#three wide column">-->
+        <!--<h4 class="ui inverted header">Footer Header</h4>-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+<!-- Script Tags -->
+<script src='static/js/data.js'></script>
+<script src='static/js/bdobosstimer.js'></script>
+</body>
+</html>

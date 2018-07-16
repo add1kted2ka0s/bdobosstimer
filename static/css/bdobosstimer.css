@@ -1,0 +1,68 @@
+body {
+    background-color: #FFFFFF;
+    /*font-family: 'Ubuntu', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
+}
+
+.main.container {
+    margin-top: 7em;
+}
+
+.ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 1em 0em;
+}
+
+.next-boss-container {
+    display: flex;
+    overflow: auto;
+}
+
+.next-boss-image-container {
+    /*background: green;*/
+    display: block;
+    padding: 10px;
+}
+
+.next-boss-image {
+    width: 120px;
+}
+
+.next-boss-content-container {
+    /*background: blue;*/
+    display: block;
+    line-height: normal;
+    padding: 10px;
+}
+
+.next-boss-content-name-container {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.next-boss-content-time-container {
+    display: flex;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.next-boss-content-eta-container {
+    display: flex;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.next-boss-content-meta-container {
+    display: flex;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.next-boss-content-meta-link {
+    color: black;
+}
