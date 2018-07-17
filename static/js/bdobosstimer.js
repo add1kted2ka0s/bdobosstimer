@@ -72,17 +72,12 @@ function addEvents() {
 function setCalendar() {
     calendar = $('#na-full-calendar-instance').fullCalendar({
         header: {
-            // left: 'prev,next today',
-            // center: 'title',
-            // right: 'agendaDay,agendaWeek,month',
             left: '',
             center: '',
             right: ''
         },
-        // height: 644,
-        contentHeight: 595,
-        // contentHeight: 1123,
-        // aspectRatio: 2,
+        allDaySlot: false,
+        contentHeight: 549,
         events: events,
         defaultView: 'agendaWeek',
         nowIndicator: true,
@@ -169,7 +164,10 @@ function startTime() {
 }
 
 // Entry point ----------------------------------------------------------------
-addEvents();
-setCalendar();
-checkNextBoss();
-startTime();
+$(document).ready(function () {
+    $('.dropdown').dropdown();
+    addEvents();
+    setCalendar();
+    checkNextBoss();
+    startTime();
+});

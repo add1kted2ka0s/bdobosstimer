@@ -9,19 +9,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="static/images/black_spirit.36x36.48x48.ico"/>
     <!-- Google Fonts -->
-    <!--<link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+    <!-- jQuery -->
+    <script src='static/js/jquery.min.js'></script>
     <!-- Semantic UI -->
-    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/site.css">
-    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/container.css">
-    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/header.css">
-    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/image.css">
-    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/menu.css">
-    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/label.css">
-    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/button.css">
-    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/divider.css">
-    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/icon.css">
-    <link rel="stylesheet" type="text/css" href="static/semantic/dist/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/semantic.css">
     <!-- Full Calendar -->
     <link rel='stylesheet' href='static/fullcalendar/fullcalendar.css'/>
     <script src='static/fullcalendar/lib/jquery.min.js'></script>
@@ -30,7 +22,7 @@
     <!-- Site Properties -->
     <title>BDO Boss Timer</title>
     <link rel="stylesheet" type="text/css" href="static/css/bdobosstimer.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122445547-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -53,15 +45,25 @@
             <img class="logo" src="static/images/black_spirit.36x36.ico">
             BDO Boss Timer
         </a>
-        <a href="#NA" class="item">NA</a>
-        <a href="#EU" class="item">EU</a>
-        <a href="#KR" class="item">KR</a>
-        <a href="#JP" class="item">JP</a>
-        <a href="#SEA" class="item">SEA</a>
-        <a href="#SA" class="item">SA</a>
-        <a href="#MENA" class="item">MENA</a>
+        <div class="ui dropdown item">
+            <div class="text">Regions</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="header">
+                    <i class="globe icon"></i>
+                    Regions
+                </div>
+                <a href="#NA" class="item"><i class="us flag"></i>North America</a>
+                <a href="#EU" class="item"><i class="eu flag"></i>Europe</a>
+                <a href="#KR" class="item"><i class="kr flag"></i>Korea</a>
+                <a href="#JP" class="item"><i class="jp flag"></i>Japan</a>
+                <a href="#SEA" class="item"><i class="sg flag"></i>South East Asia</a>
+                <a href="#SA" class="item"><i class="br flag"></i>South America</a>
+                <a href="#MENA" class="item"><i class="tr flag"></i>Middle East &amp; North Africa</a>
+            </div>
+        </div>
         <div class="item right">
-            <div id="current-time">TBD</div>
+            <div id="current-time">Time</div>
         </div>
     </div>
 </div>
@@ -73,7 +75,7 @@
     <hr>
     <p>Welcome to the BDO Boss Timer! This website aims to provide a simple overview of the the world boss spawn schedule in Black Desert Online, across all the various regions. This site is _not_ a boss kill tracker, please use the excellent BDO Boss Discords (<a href="https://discordapp.com/invite/XrSRRQm" target="_blank">NA</a> | <a href="https://discordapp.com/invite/MnruptX" target="_blank">EU</a>) for that!</p>
     <p>Usage is simple - just look up the region you want to track bosses in - no configuration, nothing! All times mentioned throughout the site are localized to your computer's current timezone.</p>
-    <p>Please see the <a href="#contact">Contact</a> section for more information on how to support further development, join as a contributor or report an issue. Future planned enhancements to this site are also tracked via the Issue Tracker.</p>
+    <p>Please see the <a href="#Contact">Contact</a> section for more information on how to support further development, join as a contributor or report an issue. Future planned enhancements to this site are also tracked via the Issue Tracker.</p>
     <!-- NA -->
     <div style="visibility: hidden">
         <a name="NA">North America</a><br><br>
@@ -147,7 +149,7 @@
     <h4 class="ui header">Coming Soon &trade;</h4>
     <!-- MENA -->
     <div style="visibility: hidden">
-        <a name="MENA">Middle East and North Africa</a><br><br>
+        <a name="MENA">Middle East &amp; North Africa</a><br><br>
     </div>
     <h1 class="ui header">Middle East and North Africa</h1>
     <hr>
@@ -187,6 +189,7 @@
     </div>
 </div>
 <!-- Script Tags -->
+<script language="javascript" src="static/semantic/dist/semantic.js"></script>
 <script src='static/js/data.js'></script>
 <script src='static/js/bdobosstimer.js'></script>
 </body>
