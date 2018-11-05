@@ -133,7 +133,6 @@ function checkNextBoss() {
         }
     }
 
-    console.log(next_boss);
     document.getElementById('na-1-next-boss-content-time').innerHTML = next_boss[0].time.local().format('dddd, MMMM Do YYYY @ hh:mm:ss A');
     document.getElementById("na-1-next-boss-content-image").src = next_boss[0].image;
     document.getElementById('na-1-next-boss-content-name').innerHTML = next_boss[0].name;
