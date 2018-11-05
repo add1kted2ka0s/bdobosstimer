@@ -8,7 +8,7 @@ var events = [];
 var current_time = moment();
 var image_path = 'static/images/';
 var next_boss = [];
-var utc_offset = -420; // GMT-0700
+var utc_offset = -480; // GMT-0700 :: Use 420 with DST off, and 480 with DST on
 var location_base_url = 'http://www.somethinglovely.net';
 var database_base_url = 'https://bddatabase.net'; // 'https://bdocodex.com'
 
@@ -65,7 +65,7 @@ function addEvents() {
             'color': color,
         };
         events.push(event);
-    }
+    }    
 }
 
 // setCalendar ----------------------------------------------------------------
@@ -90,9 +90,9 @@ function setCalendar() {
         editable: false,
         selectable: false,
         slotDuration: '01:00:00',
-        // slotDuration: '00:30:00',
+        //slotDuration: '00:30:00',
         defaultTimedEventDuration: '01:00:00',
-        // defaultTimedEventDuration: '00:30:00',
+        //defaultTimedEventDuration: '00:30:00',
         eventLimit: true, // allow "more" link when too many events
         // eventRender: function (event, el) {
         //     // render the timezone offset below the event title

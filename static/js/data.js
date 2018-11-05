@@ -112,301 +112,614 @@ var raw_events = [
     // 00:00
     {
         type: 'kzarka',
-        start: {days: 0, hours: 0, minutes: 0, seconds: 0},
+        start: {
+            days: 0,
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 03:00
     {
         type: 'kutum',
-        start: {days: 0, hours: 3, minutes: 0, seconds: 0},
+        start: {
+            days: 0,
+            hours: 3,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 07:00
     {
         type: 'nouver',
-        start: {days: 0, hours: 7, minutes: 0, seconds: 0},
+        start: {
+            days: 0,
+            hours: 7,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 10:00
     {
         type: 'kzarka',
-        start: {days: 0, hours: 10, minutes: 0, seconds: 0},
+        start: {
+            days: 0,
+            hours: 10,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 14:00
     {
         type: 'vell',
-        start: {days: 0, hours: 14, minutes: 0, seconds: 0},
+        start: {
+            days: 0,
+            hours: 14,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 17:00
     {
         type: 'karanda',
-        start: {days: 0, hours: 17, minutes: 0, seconds: 0},
+        start: {
+            days: 0,
+            hours: 17,
+            minutes: 0,
+            seconds: 0
+        },
     },
+    // 20:15
     {
         type: 'kzarka',
-        start: {days: 0, hours: 17, minutes: 0, seconds: 0},
+        start: {
+            days: 0,
+            hours: 20,
+            minutes: 15,
+            seconds: 0
+        },
     },
-    // 22:00
     {
         type: 'nouver',
-        start: {days: 0, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 0,
+            hours: 20,
+            minutes: 15,
+            seconds: 0
+        },
     },
+    // 22:15
     {
         type: 'kutum',
-        start: {days: 0, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 0,
+            hours: 22,
+            minutes: 15,
+            seconds: 0
+        },
     },
     // ========== Day 1 : Monday ==========
     // 00:00
     {
         type: 'karanda',
-        start: {days: 1, hours: 0, minutes: 0, seconds: 0},
+        start: {
+            days: 1,
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 03:00
     {
         type: 'kzarka',
-        start: {days: 1, hours: 3, minutes: 0, seconds: 0},
+        start: {
+            days: 1,
+            hours: 3,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 07:00
     {
         type: 'kzarka',
-        start: {days: 1, hours: 7, minutes: 0, seconds: 0},
+        start: {
+            days: 1,
+            hours: 7,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 10:00
     {
         type: 'nouver',
-        start: {days: 1, hours: 10, minutes: 0, seconds: 0},
+        start: {
+            days: 1,
+            hours: 10,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 14:00
     {
         type: 'kutum',
-        start: {days: 1, hours: 14, minutes: 0, seconds: 0},
+        start: {
+            days: 1,
+            hours: 14,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 17:00
     {
         type: 'nouver',
-        start: {days: 1, hours: 17, minutes: 0, seconds: 0},
+        start: {
+            days: 1,
+            hours: 17,
+            minutes: 0,
+            seconds: 0
+        },
     },
-    // 22:00
-    {
-        type: 'karanda',
-        start: {days: 1, hours: 22, minutes: 0, seconds: 0},
-    },
+    // 20:15
     {
         type: 'kzarka',
-        start: {days: 1, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 1,
+            hours: 20,
+            minutes: 15,
+            seconds: 0
+        },
+    },
+    // 22:15
+    {
+        type: 'karanda',
+        start: {
+            days: 1,
+            hours: 22,
+            minutes: 15,
+            seconds: 0
+        },
     },
     // ========== Day 2 : Tuesday ==========
     // 00:00
     {
         type: 'kutum',
-        start: {days: 2, hours: 0, minutes: 0, seconds: 0},
+        start: {
+            days: 2,
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 03:00
     {
         type: 'kzarka',
-        start: {days: 2, hours: 3, minutes: 0, seconds: 0},
+        start: {
+            days: 2,
+            hours: 3,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 07:00
     {
         type: 'kutum',
-        start: {days: 2, hours: 7, minutes: 0, seconds: 0},
+        start: {
+            days: 2,
+            hours: 7,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 10:00
     {
         type: 'offin',
-        start: {days: 2, hours: 10, minutes: 0, seconds: 0},
+        start: {
+            days: 2,
+            hours: 10,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 14:00
     {
         type: 'nouver',
-        start: {days: 2, hours: 14, minutes: 0, seconds: 0},
+        start: {
+            days: 2,
+            hours: 14,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 17:00
     {
         type: 'karanda',
-        start: {days: 2, hours: 17, minutes: 0, seconds: 0},
+        start: {
+            days: 2,
+            hours: 17,
+            minutes: 0,
+            seconds: 0
+        },
     },
+    // 20:15
     {
         type: 'nouver',
-        start: {days: 2, hours: 17, minutes: 0, seconds: 0},
-    },
-    // 22:00
-    {
-        type: 'kutum',
-        start: {days: 2, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 2,
+            hours: 20,
+            minutes: 15,
+            seconds: 0
+        },
     },
     {
         type: 'kzarka',
-        start: {days: 2, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 2,
+            hours: 20,
+            minutes: 15,
+            seconds: 0
+        },
+    },
+    // 22:15
+    {
+        type: 'kutum',
+        start: {
+            days: 2,
+            hours: 22,
+            minutes: 15,
+            seconds: 0
+        },
     },
     // ========== Day 3 : Wednesday ==========
     // 00:00
     {
         type: 'karanda',
-        start: {days: 3, hours: 0, minutes: 0, seconds: 0},
+        start: {
+            days: 3,
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 03:00
     // Maintenance
     // 07:00
     {
         type: 'karanda',
-        start: {days: 3, hours: 7, minutes: 0, seconds: 0},
+        start: {
+            days: 3,
+            hours: 7,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 10:00
     {
         type: 'nouver',
-        start: {days: 3, hours: 10, minutes: 0, seconds: 0},
+        start: {
+            days: 3,
+            hours: 10,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 14:00
     {
         type: 'kzarka',
-        start: {days: 3, hours: 14, minutes: 0, seconds: 0},
+        start: {
+            days: 3,
+            hours: 14,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 17:00
     {
         type: 'kutum',
-        start: {days: 3, hours: 17, minutes: 0, seconds: 0},
+        start: {
+            days: 3,
+            hours: 17,
+            minutes: 0,
+            seconds: 0
+        },
     },
+    // 20:15
     {
         type: 'karanda',
-        start: {days: 3, hours: 17, minutes: 0, seconds: 0},
-    },
-    // 22:00
-    {
-        type: 'karanda',
-        start: {days: 3, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 3,
+            hours: 20,
+            minutes: 15,
+            seconds: 0
+        },
     },
     {
         type: 'kzarka',
-        start: {days: 3, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 3,
+            hours: 20,
+            minutes: 15,
+            seconds: 0
+        },
+    },
+    // 22:15
+    {
+        type: 'nouver',
+        start: {
+            days: 3,
+            hours: 22,
+            minutes: 15,
+            seconds: 0
+        },
     },
     // ========== Day 4 : Thursday ==========
     // 00:00
     {
         type: 'kutum',
-        start: {days: 4, hours: 0, minutes: 0, seconds: 0},
+        start: {
+            days: 4,
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 03:00
     {
         type: 'kzarka',
-        start: {days: 4, hours: 3, minutes: 0, seconds: 0},
+        start: {
+            days: 4,
+            hours: 3,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 07:00
     {
         type: 'kutum',
-        start: {days: 4, hours: 7, minutes: 0, seconds: 0},
+        start: {
+            days: 4,
+            hours: 7,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 10:00
     {
         type: 'nouver',
-        start: {days: 4, hours: 10, minutes: 0, seconds: 0},
+        start: {
+            days: 4,
+            hours: 10,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 14:00
     {
         type: 'kutum',
-        start: {days: 4, hours: 14, minutes: 0, seconds: 0},
+        start: {
+            days: 4,
+            hours: 14,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 17:00
     {
         type: 'offin',
-        start: {days: 4, hours: 17, minutes: 0, seconds: 0},
+        start: {
+            days: 4,
+            hours: 17,
+            minutes: 0,
+            seconds: 0
+        },
     },
-    // 22:00
+    // 20:15
     {
         type: 'karanda',
-        start: {days: 4, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 4,
+            hours: 20,
+            minutes: 15,
+            seconds: 0
+        },
     },
+    // 22:15
     {
         type: 'kzarka',
-        start: {days: 4, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 4,
+            hours: 22,
+            minutes: 15,
+            seconds: 0
+        },
     },
     // ========== Day 5 : Friday ==========
     // 00:00
     {
         type: 'nouver',
-        start: {days: 5, hours: 0, minutes: 0, seconds: 0},
+        start: {
+            days: 5,
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 03:00
     {
         type: 'karanda',
-        start: {days: 5, hours: 3, minutes: 0, seconds: 0},
+        start: {
+            days: 5,
+            hours: 3,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 07:00
     {
         type: 'kutum',
-        start: {days: 5, hours: 7, minutes: 0, seconds: 0},
+        start: {
+            days: 5,
+            hours: 7,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 10:00
     {
         type: 'karanda',
-        start: {days: 5, hours: 10, minutes: 0, seconds: 0},
+        start: {
+            days: 5,
+            hours: 10,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 14:00
     {
         type: 'nouver',
-        start: {days: 5, hours: 14, minutes: 0, seconds: 0},
+        start: {
+            days: 5,
+            hours: 14,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 17:00
     {
         type: 'kzarka',
-        start: {days: 5, hours: 17, minutes: 0, seconds: 0},
+        start: {
+            days: 5,
+            hours: 17,
+            minutes: 0,
+            seconds: 0
+        },
     },
+    // 20:15
     {
         type: 'kutum',
-        start: {days: 5, hours: 17, minutes: 0, seconds: 0},
-    },
-    // 22:00
-    {
-        type: 'nouver',
-        start: {days: 5, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 5,
+            hours: 20,
+            minutes: 15,
+            seconds: 0
+        },
     },
     {
         type: 'kzarka',
-        start: {days: 5, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 5,
+            hours: 20,
+            minutes: 15,
+            seconds: 0
+        },
+    },
+    // 22:15
+    {
+        type: 'karanda',
+        start: {
+            days: 5,
+            hours: 22,
+            minutes: 15,
+            seconds: 0
+        },
     },
     // ========== Day 6 : Saturday ==========
     // 00:00
     {
         type: 'offin',
-        start: {days: 6, hours: 0, minutes: 0, seconds: 0},
+        start: {
+            days: 6,
+            hours: 0,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 03:00
     {
         type: 'nouver',
-        start: {days: 6, hours: 3, minutes: 0, seconds: 0},
+        start: {
+            days: 6,
+            hours: 3,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 07:00
     {
         type: 'kutum',
-        start: {days: 6, hours: 7, minutes: 0, seconds: 0},
+        start: {
+            days: 6,
+            hours: 7,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 10:00
     {
         type: 'nouver',
-        start: {days: 6, hours: 10, minutes: 0, seconds: 0},
+        start: {
+            days: 6,
+            hours: 10,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 14:00
     {
         type: 'quint',
-        start: {days: 6, hours: 14, minutes: 0, seconds: 0},
+        start: {
+            days: 6,
+            hours: 14,
+            minutes: 0,
+            seconds: 0
+        },
     },
     {
         type: 'muraka',
-        start: {days: 6, hours: 14, minutes: 0, seconds: 0},
+        start: {
+            days: 6,
+            hours: 14,
+            minutes: 0,
+            seconds: 0
+        },
     },
     // 17:00
     {
-        type: 'karanda',
-        start: {days: 6, hours: 17, minutes: 0, seconds: 0},
+        type: 'kzarka',
+        start: {
+            days: 6,
+            hours: 17,
+            minutes: 0,
+            seconds: 0
+        },
     },
     {
-        type: 'kzarka',
-        start: {days: 6, hours: 17, minutes: 0, seconds: 0},
+        type: 'karanda',
+        start: {
+            days: 6,
+            hours: 17,
+            minutes: 0,
+            seconds: 0
+        },
     },
-    // 22:00
+    // 20:15
+    // Conquest War
+    // 22:15
     {
         type: 'nouver',
-        start: {days: 6, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 6,
+            hours: 22,
+            minutes: 15,
+            seconds: 0
+        },
     },
     {
         type: 'kutum',
-        start: {days: 6, hours: 22, minutes: 0, seconds: 0},
+        start: {
+            days: 6,
+            hours: 22,
+            minutes: 15,
+            seconds: 0
+        },
     },
 ];
