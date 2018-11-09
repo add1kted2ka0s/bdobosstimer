@@ -65,7 +65,7 @@ function addEvents() {
             'color': color,
         };
         events.push(event);
-    }    
+    }
 }
 
 // setCalendar ----------------------------------------------------------------
